@@ -3,6 +3,7 @@ package com.peiandsky.uilibtest
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.peiandsky.uilibtest.help.HelpDemoActivity
 import com.peiandsky.uilibtest.popup.ToastyActivity
 import kotlinx.android.synthetic.main.activity_index.*
 
@@ -14,6 +15,10 @@ class MainActivity : AppCompatActivity() {
 
         btn_toasty.setOnClickListener {
             startActivity(Intent(this, ToastyActivity::class.java))
+        }
+
+        btn_help.setOnClickListener {
+            startActivity(Intent(this, HelpDemoActivity::class.java))
         }
     }
 }
